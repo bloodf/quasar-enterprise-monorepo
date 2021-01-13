@@ -1,0 +1,57 @@
+{
+  "name": "@quasar-enterprise-monorepo/vue-router-utils",
+  "version": "0.0.1",
+  "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsdx build",
+    "build:docs": "npm run build && npm run docs",
+    "docs": "typedoc",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:fix": "npm run lint:fix:src && npm run lint:fix:test",
+    "lint:fix:src": "eslint src --fix",
+    "lint:fix:test": "eslint test --fix",
+    "lint:src": "eslint src",
+    "lint:test": "eslint test",
+    "precommit": "lint-staged",
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test --passWithNoTests",
+    "test:coverage": "tsdx test --coverage --passWithNoTests",
+    "test:ui": "majestic",
+    "test:unit": "tsdx test --updateSnapshot --passWithNoTests",
+    "test:watch": "tsdx test --watch --passWithNoTests",
+    "test:watchAll": "tsdx test --watchAll --passWithNoTests",
+    "update:check": "ncu",
+    "update:update": "ncu -u"
+  },
+  "main": "src/index.ts",
+  "typings": "types/index.d.ts",
+  "engines": {
+    "node": ">= 12",
+    "yarn": ">= 1"
+  },
+  "files": [
+    "types",
+    "src"
+  ],
+  "dependencies": {
+    "@quasar-enterprise-monorepo/text-utils": "*",
+    "vue-router": "^3.4.9"
+  },
+  "devDependencies": {
+    "@quasar-enterprise-monorepo/eslint-config-monorepo": "*",
+    "@quasar-enterprise-monorepo/eslint-config-monorepo-import": "*",
+    "@quasar-enterprise-monorepo/eslint-config-monorepo-typescript": "*",
+    "hygen": "^6.0.4",
+    "majestic": "^1.8.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typedoc": "^0.20.14",
+    "typedoc-plugin-markdown": "^3.4.0",
+    "typedoc-plugin-sourcefile-url": "^1.0.6",
+    "typescript": "^4.1.3",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "peerDependencies": {}
+}

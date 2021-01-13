@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@graphql/*": ["src/graphql/*"],
+      "app/*": ["./*"],
+      "assets/*": ["src/assets/*"],
+      "boot/*": ["src/boot/*"],
+      "components/*": ["src/components/*"],
+      "cypress/*": ["test/cypress/*"],
+      "drivers/*": ["src/drivers/*"],
+      "enums/*": ["src/enums/*"],
+      "jest/*": ["test/jest/*"],
+      "jest/tests/*": ["test/jest/__tests__/*"],
+      "jest/utils/*": ["test/jest/utils/*"],
+      "layouts/*": ["src/layouts/*"],
+      "loaders/*": ["test/loaders/*"],
+      "mixins/*": ["src/mixins/*"],
+      "pages/*": ["src/pages/*"],
+      "services/*": ["src/services/*"],
+      "src/*": ["src/*"],
+      "store/*": ["src/store/*"],
+      "utils/*": ["src/utils/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.vue",
+    "test/**/*.ts",
+    "test/**/*.vue"
+  ],
+  "exclude": ["_templates", "dist", "node_modules", ".quasar"]
+}

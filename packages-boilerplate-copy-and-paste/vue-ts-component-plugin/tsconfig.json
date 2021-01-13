@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "app/*": [
+        "./*"
+      ],
+      "src/*": [
+        "src/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "styles/*": [
+        "src/styles/*"
+      ],
+      "tests/*": [
+        "tests/*"
+      ]
+    }
+  },
+  "include": [
+    "./src",
+    "./tests"
+  ],
+  "exclude": [
+    "node_modules",
+    "_templates"
+  ]
+}

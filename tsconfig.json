@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["ESNext", "ScriptHost", "DOM", "DOM.Iterable", "WebWorker"],
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "preserveSymlinks": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "jsx": "preserve",
+    "target": "es6",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "importsNotUsedAsValues": "preserve"
+  },
+  "exclude": [
+    "node_modules",
+    "_templates",
+    "dist",
+    ".quasar"
+  ]
+}

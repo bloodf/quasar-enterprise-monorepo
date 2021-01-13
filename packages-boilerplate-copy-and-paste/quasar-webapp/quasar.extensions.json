@@ -1,0 +1,23 @@
+{
+  "@quasar/testing": {
+    "harnesses": [
+      "unit-jest"
+    ]
+  },
+  "@quasar/testing-unit-jest": {
+    "babel": "babelrc",
+    "options": [
+      "scripts",
+      "SFC",
+      "wallabyjs",
+      "majestic"
+    ]
+  },
+  "@quasar/dotenv": {
+    "env_development": ".env.dev",
+    "env_production": ".env",
+    "common_root_object": "none",
+    "create_env_files": true,
+    "add_env_to_gitignore": false
+  }
+}

@@ -1,0 +1,26 @@
+name: Jest
+on: [push]
+
+jobs:
+  test:
+    name: Jest Unit Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Begin CI...
+        uses: actions/checkout@v2
+
+      - name: Use Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - uses: c-hive/gha-yarn-cache@v1
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Test
+        run: yarn test
+        env:
+          CI: true

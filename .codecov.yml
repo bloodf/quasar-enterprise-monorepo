@@ -1,0 +1,113 @@
+ignore:
+  - "**/_templates/**/*"
+  - "**/docs/**/*"
+  - "**/dist/**/*"
+  - "**/*.config.js"
+  - "packages-boilerplate-copy-and-paste/**/*"
+  - "applications/**/tests/*"
+  - "applications/**/__mocks__/*"
+  - "clients/**/tests/*"
+  - "clients/**/__mocks__/*"
+  - "packages/**/tests/*"
+  - "packages/**/__mocks__/*"
+  - "utils/**/tests/*"
+  - "utils/**/__mocks__/*"
+  - "vuex-common-stores/**/tests/*"
+  - "vuex-common-stores/**/__mocks__/*"
+
+coverage:
+  status:
+    project:
+      default:
+        threshold: 0.10%
+      # region Applications
+      webapp:
+        target: auto
+        flags:
+          - webapp
+      # endregion
+      # region Clients
+      axios:
+        target: auto
+        flags:
+          - axios
+      graphql:
+        target: auto
+        flags:
+          - graphql
+      # endregion
+      # region Packages
+      quasar-testing:
+        target: auto
+        flags:
+          - quasar-testing
+      # endregion
+      # region Utils
+      text-utils:
+        target: auto
+        flags:
+          - text-utils
+      vue-router-utils:
+        target: auto
+        flags:
+          - vue-router-utils
+      vuelidate-utils:
+        target: auto
+        flags:
+          - vuelidate-utils
+      vuex-utils:
+        target: auto
+        flags:
+          - vuex-utils
+      # endregion
+      # region Vuex Common Stores
+      base-store:
+        target: auto
+        flags:
+          - base-store
+      # endregion
+
+    patch: off
+
+flags:
+  # region Applications
+  webapp:
+    paths:
+      - applications/webapp/
+  # endregion
+
+  # region Clients
+  axios:
+    paths:
+      - clients/axios/
+  graphql:
+    paths:
+      - clients/graphql/
+  # endregion
+
+  # region Packages
+  quasar-testing:
+    paths:
+      - packages/quasar-testing/
+  # endregion
+
+  # region Utils
+  text-utils:
+    paths:
+      - utils/text-utils/
+    vue-router-utils:
+      paths:
+        - utils/vue-router-utils/
+    vuelidate-utils:
+      paths:
+        - utils/vuelidate-utils/
+    vuex-utils:
+      paths:
+        - utils/vuex-utils/
+  # endregion
+
+  # region Vuex Common Stores
+  base-store:
+    paths:
+      - vuex-common-stores/base-store/
+  # endregion
