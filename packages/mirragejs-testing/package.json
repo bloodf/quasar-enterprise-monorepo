@@ -40,6 +40,7 @@
     "faker": "^5.1.0"
   },
   "devDependencies": {
+    "@types/faker": "^5.1.5",
     "@quasar-enterprise-monorepo/eslint-config-monorepo": "*",
     "@quasar-enterprise-monorepo/eslint-config-monorepo-import": "*",
     "@quasar-enterprise-monorepo/eslint-config-monorepo-typescript": "*",
