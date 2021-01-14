@@ -1,5 +1,5 @@
 {
-  "name": "@quasar-enterprise-monorepo/quasar_webapp",
+  "name": "@quasar-enterprise-monorepo/quasar-webapp",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",

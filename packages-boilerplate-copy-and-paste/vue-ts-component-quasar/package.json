@@ -4,7 +4,7 @@
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "vue-cli-service build --target lib --name new_vue_ts_component",
+    "build": "vue-cli-service build --target lib --name vue-ts-component-quasar",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix",
     "lint:fix:src": "vue-cli-service lint --fix src/",

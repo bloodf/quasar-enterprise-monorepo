@@ -1,5 +1,5 @@
 {
-  "name": "@quasar-enterprise-monorepo/new_service",
+  "name": "@quasar-enterprise-monorepo/service-plugin",
   "version": "0.0.1",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
   "license": "MIT",
