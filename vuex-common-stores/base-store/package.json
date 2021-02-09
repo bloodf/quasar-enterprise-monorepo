@@ -62,7 +62,9 @@
     "vue-cli-plugin-quasar": "~3.0.1",
     "vue-cli-plugin-styleguidist": "^4.34.2",
     "vue-template-compiler": "^2.6.12",
-    "wallaby-vue-compiler": "^1.0.6"
+    "wallaby-vue-compiler": "^1.0.6",
+    "@vue/composition-api": "^0.6.7",
+    "vuex-composition-helpers": "^1.0.22"
   },
   "engines": {
     "node": ">= 12",

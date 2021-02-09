@@ -1,9 +1,11 @@
 import Vue from 'vue';
-// eslint-disable-next-line import/extensions
+import VueCompositionAPI from '@vue/composition-api';
 import App from './App.vue';
 import './quasar';
 
 Vue.config.productionTip = false;
+
+Vue.use(VueCompositionAPI);
 
 new Vue({
   render: (h) => h(App),

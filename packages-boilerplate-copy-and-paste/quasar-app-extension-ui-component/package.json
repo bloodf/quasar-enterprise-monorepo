@@ -30,6 +30,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@quasar/extras": "^1.9.13",
+    "@vue/composition-api": "^0.6.7",
     "core-js": "^3.8.2",
     "quasar": "^1.15.0",
     "vue": "^2.6.12",
