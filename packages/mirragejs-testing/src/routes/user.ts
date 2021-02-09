@@ -1,61 +1,16 @@
-import { Model, Factory, Server } from 'miragejs';
-import faker from 'faker';
+import { Server } from 'miragejs';
+import { SchemaModelsDefinition } from 'src/interfaces/schema';
+// eslint-disable-next-line import/extensions,import/no-unresolved
+import Schema from 'miragejs/orm/schema';
 
 export enum UserApiRoutes {
+  BaseUrl = '/users',
   ListUsers = '/users',
   CreateUser = '/users',
-  UpdateUser = '/users',
-  DeleteUser = '/users',
+  UpdateUser = '/users/:id',
+  DeleteUser = '/users/:id',
 }
-
-export interface UserApiData {
-  address: string;
-  avatar: string;
-  birthday: string;
-  country: string;
-  email: string;
-  mobilePhone: string;
-  name: string;
-  phone: string;
-  username: string;
-}
-
-export const userModel = Model.extend({});
-
-export const userFactory = Factory.extend<UserApiData>({
-  address(): string {
-    return faker.address.streetAddress(true);
-  },
-  avatar(): string {
-    return faker.internet.avatar();
-  },
-  birthday(): string {
-    return faker.date.past(Math.round(Math.random() * 10)).toISOString();
-  },
-  country(): string {
-    return faker.address.country();
-  },
-  email(): string {
-    return faker.internet.email();
-  },
-  mobilePhone(): string {
-    return faker.phone.phoneNumber();
-  },
-  name(): string {
-    const firstName:string = faker.name.firstName();
-    const middleName: string = faker.name.middleName();
-    const lastName: string = faker.name.lastName();
-
-    return `${firstName} ${middleName} ${lastName}`;
-  },
-  phone(): string {
-    return faker.phone.phoneNumber();
-  },
-  username(): string {
-    return faker.internet.userName();
-  },
-});
 
 export const createUserRoute = (server: Server) => {
-  server.get(UserApiRoutes.ListUsers, (handler) => {});
+  server.get(UserApiRoutes.ListUsers, (schema: Schema<SchemaModelsDefinition>) => schema.users.all());
 };

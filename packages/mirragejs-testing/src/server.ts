@@ -1,24 +1,21 @@
-import { createServer, Model } from 'miragejs';
-import { createUserRoute } from 'src/routes/user';
+import { createServer } from 'miragejs';
+import { models } from 'src/db/models';
+import { factories } from 'src/factories';
+import { seeds } from 'src/seeds';
+import { routes } from 'src/routes';
 
 export function makeServer({ environment = 'development' } = {}) {
-  const server = createServer({
+  const serverBase = createServer({
     environment,
 
-    models: {
-      user: Model,
-    },
+    models,
 
-    seeds(server) {
-      server.create('user', { name: 'Bob' });
-      server.create('user', { name: 'Alice' });
-    },
+    factories,
 
-    routes() {
-      this.namespace = 'api';
-      createUserRoute(this);
-    },
+    seeds,
+
+    routes,
   });
 
-  return server;
+  return serverBase;
 }
