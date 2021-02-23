@@ -1,7 +1,14 @@
+const path = require('path');
+const { name } = require('./package.json');
+
 module.exports = {
-  // set your styleguidist configuration here
-  title: 'Default Style Guide',
+  title: name,
   components: 'src/components/**/[A-Z]*.vue',
+  require: [path.join(__dirname, 'styleguide/global.requires.js')],
+  renderRootJsx: path.join(__dirname, 'styleguide/styleguide.root.js'),
+  usageMode: 'expand',
+  exampleMode: 'expand',
+  styleguideDir: 'dist',
   // defaultExample: true,
   // sections: [
   //   {
@@ -12,5 +19,4 @@ module.exports = {
   // webpackConfig: {
   //   // custom config goes here
   // },
-  exampleMode: 'expand',
 };

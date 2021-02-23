@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { boot } from 'quasar/wrappers';
 import { StoreInterface } from 'src/store';
 // eslint-disable-next-line import/no-mutable-exports

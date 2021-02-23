@@ -27,6 +27,7 @@ module.exports = {
   // watch: true,
   collectCoverageFrom: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.{vue,js,jsx,ts,tsx}`,
+    `!<rootDir>/${moduleName}/${packageName}/src/{App,main,InstallPlugin,quasar,index}.{vue,js,jsx,ts,tsx}`,
   ],
   testMatch: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.jest.(spec|test).+(ts|js)?(x)`,
@@ -50,9 +51,9 @@ module.exports = {
   },
 
   moduleNameMapper: {
-    '^vue$': '<rootDir>/node_modules/vue/dist/vue.common.js',
-    '^test-utils$': '<rootDir>/node_modules/@vue/test-utils/dist/vue-test-utils.js',
-    '^quasar$': '<rootDir>/node_modules/quasar/dist/quasar.common.js',
+    '^vue$': 'vue/dist/vue.common.js',
+    '^test-utils$': '@vue/test-utils/dist/vue-test-utils.js',
+    '^quasar$': 'quasar/dist/quasar.common.js',
     '.*css$': '@quasar/quasar-app-extension-testing-unit-jest/stub.css',
     '^~/(.*)$': `<rootDir>/${moduleName}/${packageName}/$1`,
     '^@/(.*)$': `<rootDir>/${moduleName}/${packageName}/$1`,

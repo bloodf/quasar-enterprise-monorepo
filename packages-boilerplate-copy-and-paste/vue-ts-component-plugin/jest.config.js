@@ -27,6 +27,7 @@ module.exports = {
   // watch: true,
   collectCoverageFrom: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.{vue,js,jsx,ts,tsx}`,
+    `!<rootDir>/${moduleName}/${packageName}/src/{App,main,InstallPlugin,quasar,index}.{vue,js,jsx,ts,tsx}`,
   ],
   testMatch: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.jest.(spec|test).+(ts|js)?(x)`,

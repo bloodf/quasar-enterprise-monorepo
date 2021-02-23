@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import Vuex, { Store } from 'vuex';
 import { store } from 'quasar/wrappers';
 import requiredModules from '@quasar-enterprise-monorepo/vuex-utils/src/requiredModules';

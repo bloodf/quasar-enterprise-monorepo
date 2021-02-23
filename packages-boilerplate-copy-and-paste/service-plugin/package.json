@@ -1,5 +1,5 @@
 {
-  "name": "@quasar-enterprise-monorepo/service-plugin",
+  "name": "@quasar-enterprise-monorepo/new_service",
   "version": "0.0.1",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
   "license": "MIT",
@@ -14,7 +14,6 @@
     "lint:src": "eslint src",
     "lint:test": "eslint test",
     "precommit": "lint-staged",
-    "prepare": "tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test --passWithNoTests",
     "test:coverage": "tsdx test --coverage --passWithNoTests",
@@ -43,11 +42,11 @@
     "majestic": "^1.8.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
-    "typedoc": "^0.20.14",
-    "typedoc-plugin-markdown": "^3.4.0",
+    "typedoc": "^0.20.25",
+    "typedoc-plugin-markdown": "^3.5.0",
     "typedoc-plugin-sourcefile-url": "^1.0.6",
-    "typescript": "^4.1.3",
-    "whatwg-fetch": "^3.5.0"
+    "typescript": "^4.1.5",
+    "whatwg-fetch": "^3.6.1"
   },
   "peerDependencies": {}
 }
