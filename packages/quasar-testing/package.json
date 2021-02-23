@@ -36,15 +36,15 @@
     "src"
   ],
   "dependencies": {
-    "@quasar/app": "^2.1.14",
-    "@quasar/extras": "^1.9.13",
+    "@quasar/app": "^2.1.15",
+    "@quasar/extras": "^1.9.17",
     "@vue/composition-api": "^0.6.7",
-    "quasar": "^1.15.0",
+    "quasar": "^1.15.4",
     "vue": "^2.6.12",
-    "vue-i18n": "^8.22.3",
-    "vue-router": "^3.4.9",
+    "vue-i18n": "^8.22.4",
+    "vue-router": "^3.5.1",
     "vuelidate": "^0.7.6",
-    "vuex": "^3.6.0"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@quasar-enterprise-monorepo/eslint-config-monorepo": "*",
@@ -52,18 +52,18 @@
     "@quasar-enterprise-monorepo/eslint-config-monorepo-typescript": "*",
     "@quasar/cli": "^1.1.3",
     "@quasar/quasar-app-extension-testing": "^1.0.3",
-    "@quasar/quasar-app-extension-testing-unit-jest": "^2.1.0",
+    "@quasar/quasar-app-extension-testing-unit-jest": "^2.2.1",
     "@types/vuelidate": "^0.7.13",
-    "@vue/test-utils": "^1.1.2",
+    "@vue/test-utils": "^1.1.3",
     "hygen": "^6.0.4",
     "majestic": "^1.8.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
-    "typedoc": "^0.20.14",
-    "typedoc-plugin-markdown": "^3.4.0",
+    "typedoc": "^0.20.28",
+    "typedoc-plugin-markdown": "^3.5.0",
     "typedoc-plugin-sourcefile-url": "^1.0.6",
-    "typescript": "^4.1.3",
-    "whatwg-fetch": "^3.5.0"
+    "typescript": "^4.1.5",
+    "whatwg-fetch": "^3.6.1"
   },
   "peerDependencies": {}
 }

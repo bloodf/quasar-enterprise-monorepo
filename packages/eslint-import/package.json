@@ -2,7 +2,7 @@
   "name": "@quasar-enterprise-monorepo/eslint-config-monorepo-import",
   "version": "0.0.1",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
-  "license": "SEE LICENSE IN KOVI.md",
+  "license": "MIT",
   "scripts": {
     "build": "echo \"Skip this step\"",
     "docs": "echo \"Skip this step\"",
