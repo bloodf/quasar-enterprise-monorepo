@@ -1,10 +1,4 @@
 module.exports = {
-  extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-  ],
-
   rules: {
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-redeclare': ['error'],

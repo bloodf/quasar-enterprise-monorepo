@@ -1,15 +1,7 @@
 module.exports = {
   extends: [
-    'airbnb-base',
     'eslint:recommended',
-
-    //Unicorn Promise
+    'airbnb-base',
     'plugin:promise/recommended',
-    'plugin:unicorn/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {},
 };

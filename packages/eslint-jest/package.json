@@ -1,9 +1,8 @@
 {
-  "name": "@quasar-enterprise-monorepo/eslint-config-monorepo-vue",
+  "name": "@kovi-frontend/eslint-config-monorepo-jest",
   "version": "0.0.1",
-  "license": "MIT",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
-  "main": "index.js",
+  "license": "SEE LICENSE IN KOVI.md",
   "scripts": {
     "build": "echo \"Skip this step\"",
     "docs": "echo \"Skip this step\"",
@@ -29,7 +28,8 @@
     "index.js",
     "rules"
   ],
+  "main": "index.js",
   "dependencies": {
-    "eslint-plugin-vue": "^7.6.0"
+    "eslint-plugin-jest": "^24.1.5"
   }
 }
