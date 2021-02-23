@@ -1,7 +1,8 @@
+/* istanbul ignore file */
+import { boot } from 'quasar/wrappers';
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 import messages from 'src/i18n';
-import { boot } from 'quasar/wrappers';
 import { StoreInterface } from 'src/store';
 
 Vue.use(VueI18n);

@@ -6,7 +6,9 @@ const webpackConf = require('./webpack.conf');
 const { configure } = require('quasar/wrappers');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
-export const frameworkLang = 'en-us';
+const frameworkLang = 'en-us';
+
+module.exports.frameworkLang = frameworkLang;
 
 module.exports = configure(function (ctx) {
   return {

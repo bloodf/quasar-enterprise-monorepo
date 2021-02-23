@@ -24,19 +24,8 @@ module.exports = {
     '@quasar-enterprise-monorepo/eslint-config-monorepo',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-typescript',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-import',
+    '@quasar-enterprise-monorepo/eslint-config-monorepo-jest',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue-i18n',
-  ],
-
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        jest: true,
-      },
-    },
   ],
 };

@@ -8,7 +8,9 @@ import <%= h.changeCase.pascal(name) %> from 'components/<%= folder %>/<%= h.cha
 describe('Mount <%= h.changeCase.pascal(name) %>.vue', () => {
    const baseOptions = mountQuasarOptions();
 
-   const wrapper = shallowMount<<%= h.changeCase.pascal(name) %>>(<%= h.changeCase.pascal(name) %>, {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+   const wrapper = shallowMount<typeof <%= h.changeCase.pascal(name) %>>(<%= h.changeCase.pascal(name) %>, {
      ...baseOptions,
    });
 
