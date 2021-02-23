@@ -20,6 +20,7 @@ module.exports = {
   preset: './jest.config.base.js',
   rootDir: '../..',
   coverageDirectory: `<rootDir>/${moduleName}/${packageName}/coverage`,
+  setupFilesAfterEnv: [`<rootDir>/${moduleName}/${packageName}/test/jest.setup.js`],
   // noStackTrace: true,
   // bail: true,
   // cache: false,
