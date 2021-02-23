@@ -9,7 +9,7 @@ module.exports = {
 
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
     tsconfigRootDir: `${__dirname}`,
     extraFileExtensions: ['.vue']
   },
@@ -27,6 +27,7 @@ module.exports = {
     '@quasar-enterprise-monorepo/eslint-config-monorepo-import',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue-i18n',
+    '@quasar-enterprise-monorepo/eslint-config-monorepo-jest',
   ],
 
   overrides: [

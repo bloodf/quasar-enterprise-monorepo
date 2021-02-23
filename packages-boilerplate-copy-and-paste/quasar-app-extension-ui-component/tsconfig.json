@@ -1,7 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "app/*": [
         "./*"
@@ -12,11 +12,11 @@
       "components/*": [
         "src/components/*"
       ],
-      "component/*": [
-        "component/*"
-      ],
       "styles/*": [
         "src/styles/*"
+      ],
+      "store/*": [
+        "src/store/*"
       ],
       "tests/*": [
         "tests/*"
@@ -24,17 +24,7 @@
     }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.js",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.js",
-    "tests/**/*.tsx",
-    "component/**/*.ts",
-    "component/**/*.js",
-    "component/**/*.tsx",
-    "component/**/*.vue"
+    "src"
   ],
   "exclude": [
     "node_modules",

@@ -80,9 +80,6 @@
     "hygen": "^6.0.4",
     "moment-locales-webpack-plugin": "^1.2.0",
     "vue-styleguidist": "^4.35.0",
-    "serverless": "2.25.2",
-    "serverless-prune-plugin": "1.4.3",
-    "serverless-s3-sync": "1.16.1",
     "workbox-webpack-plugin": "^6.1.1"
   },
   "engines": {

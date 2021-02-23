@@ -24,7 +24,6 @@ config.yml
 package.json
 quasar.extensions.json
 quasar.testing.json
-serverless.yml
 tsconfig.json
 wallaby.js
 tsdx.config.js

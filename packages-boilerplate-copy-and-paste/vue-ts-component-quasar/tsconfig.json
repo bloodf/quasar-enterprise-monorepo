@@ -15,14 +15,16 @@
       "styles/*": [
         "src/styles/*"
       ],
+      "store/*": [
+        "src/store/*"
+      ],
       "tests/*": [
         "tests/*"
       ]
     }
   },
   "include": [
-    "./src",
-    "./tests"
+    "src"
   ],
   "exclude": [
     "node_modules",
