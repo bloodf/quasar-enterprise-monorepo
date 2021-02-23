@@ -9,9 +9,8 @@ module.exports = {
 
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
     tsconfigRootDir: `${__dirname}`,
-
   },
 
   globals: {
@@ -23,5 +22,6 @@ module.exports = {
     '@quasar-enterprise-monorepo/eslint-config-monorepo',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-typescript',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-import',
+    '@quasar-enterprise-monorepo/eslint-config-monorepo-jest',
   ],
 };

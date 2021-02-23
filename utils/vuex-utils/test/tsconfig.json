@@ -1,7 +1,10 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.eslint.json",
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs"
-  }
+  },
+  "include": [
+    "../src",
+  ]
 }
