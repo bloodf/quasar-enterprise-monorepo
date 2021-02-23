@@ -2,9 +2,7 @@
 to: src/pages/<%= folder %>/<%= h.changeCase.pascal(name) %>.vue
 ---
 <template>
-  <q-page padding>
-    <!-- content -->
-  </q-page>
+  <div />
 </template>
 
 <script lang="ts">
