@@ -14,7 +14,7 @@
     ]
   },
   "scripts": {
-    "postinstall": "manypkg check && yarn manypkg fix",
+    "postinstall": "yarn manypkg fix",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna run build:ci --stream",
     "clean": "manypkg exec npx rimraf node_modules && manypkg exec npx rimraf coverage && manypkg exec npx rimraf dist && rm -rf node_modules && npx rimraf yarn.lock",

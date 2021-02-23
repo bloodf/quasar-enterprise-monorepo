@@ -41,8 +41,8 @@
   "devDependencies": {
     "@quasar-enterprise-monorepo/eslint-config-monorepo": "*",
     "@quasar-enterprise-monorepo/eslint-config-monorepo-import": "*",
-    "@quasar-enterprise-monorepo/eslint-config-monorepo-typescript": "*",
     "@quasar-enterprise-monorepo/eslint-config-monorepo-jest": "*",
+    "@quasar-enterprise-monorepo/eslint-config-monorepo-typescript": "*",
     "hygen": "^6.0.4",
     "majestic": "^1.8.0",
     "tsdx": "^0.14.1",
