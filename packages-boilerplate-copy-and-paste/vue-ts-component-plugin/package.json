@@ -2,7 +2,6 @@
   "name": "@quasar-enterprise-monorepo/new_vue_ts_component",
   "version": "0.0.1",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "vue-cli-service build --target lib --name new_vue_ts_component",
@@ -30,7 +29,9 @@
   ],
   "dependencies": {
     "@vue/composition-api": "^0.6.7",
+    "@quasar/extras": "^1.9.17",
     "core-js": "^3.9.0",
+    "quasar": "^1.15.4",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"
@@ -56,15 +57,16 @@
     "majestic": "^1.8.0",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
+    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "~4.1.5",
     "vue-cli-plugin-styleguidist": "^4.35.0",
     "vue-template-compiler": "^2.6.12",
-    "wallaby-vue-compiler": "^1.0.6",
-    "tsconfig-paths-webpack-plugin": "^3.3.0",
-    "tsconfig-paths": "^3.9.0"
+    "wallaby-vue-compiler": "^1.0.6"
   },
   "engines": {
     "node": ">= 12",
     "yarn": ">= 1"
-  }
+  },
+  "license": "MIT"
 }

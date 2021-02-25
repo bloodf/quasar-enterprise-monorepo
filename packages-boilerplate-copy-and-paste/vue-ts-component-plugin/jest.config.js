@@ -2,7 +2,7 @@
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
 const { compilerOptions } = require('./tsconfig.json');
 
-const packageName = require('./package.json').name.split('@kovi-frontend/').pop();
+const packageName = require('./package.json').name.split('@quasar-enterprise-monorepo/').pop();
 const moduleName = (() => {
   const dirArray = __dirname
   .split(/(\/|\\)/i)
