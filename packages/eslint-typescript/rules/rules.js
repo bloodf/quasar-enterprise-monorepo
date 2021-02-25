@@ -8,5 +8,19 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', {
+      'ignoreRestSiblings': true,
+      'argsIgnorePattern': '^_',
+      'caughtErrorsIgnorePattern': '^ignore'
+    }],
+    'max-len': ['error', {
+      code: 150,
+      ignoreComments: true,
+      ignoreUrls: true,
+      ignoreTemplateLiterals: true,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+    }],
+    'class-methods-use-this': 'off',
   },
 };

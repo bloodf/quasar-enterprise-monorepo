@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    'plugin:vue-i18n/recommended',
+    'plugin:@intlify/vue-i18n/recommended',
   ],
 };

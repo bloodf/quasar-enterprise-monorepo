@@ -1,9 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
-    './rules/plugins',
-    './rules/typescript',
     './rules/env',
-    './rules/errors',
+    './rules/parser',
+    './rules/plugins',
+    './rules/extends',
+    './rules/rules',
   ].map(require.resolve),
 };

@@ -1,10 +1,11 @@
 module.exports = {
   rules: {
-    'vue-i18n/no-dynamic-keys': 'error',
-    'vue-i18n/no-unused-keys': [
+    '@intlify/vue-i18n/no-dynamic-keys': 'off',
+    '@intlify/vue-i18n/no-unused-keys': [
       'error',
       {
-        extensions: ['.js', '.vue', '.ts']
-      }],
+        extensions: ['.js', '.vue', '.ts'],
+      },
+    ],
   },
 };

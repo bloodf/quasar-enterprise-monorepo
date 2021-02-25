@@ -1,12 +1,10 @@
 module.exports = {
   extends: [
+    './rules/env',
     './rules/parser',
+    './rules/globals',
     './rules/plugins',
     './rules/extends',
-    './rules/errors',
-    './rules/warn',
-    './rules/off',
-    './rules/env',
-    './rules/globals',
+    './rules/rules',
   ].map(require.resolve),
 };
