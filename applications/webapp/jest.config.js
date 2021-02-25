@@ -82,12 +82,12 @@ module.exports = {
 
   globals: {
     'ts-jest': {
-      tsconfig: `<rootDir>/${moduleName}/${packageName}/test/tsconfig.json`,
+      tsconfig: `<rootDir>/${moduleName}/${packageName}/tsconfig.json`,
       diagnostics: false,
       babelConfig: true,
     },
     'vue-jest': {
-      tsconfig: `<rootDir>/${moduleName}/${packageName}/test/tsconfig.json`,
+      tsconfig: `<rootDir>/${moduleName}/${packageName}/tsconfig.json`,
       experimentalCSSCompile: true,
     }
   },
