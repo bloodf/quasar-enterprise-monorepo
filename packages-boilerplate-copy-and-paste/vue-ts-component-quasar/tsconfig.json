@@ -24,10 +24,12 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    "tests"
   ],
   "exclude": [
     "node_modules",
-    "_templates"
+    "_templates",
+    "dist"
   ]
 }
