@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 module.exports = {
   root: true,
 
@@ -9,17 +11,22 @@ module.exports = {
 
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    project: './tsconfig.eslint.json',
-    tsconfigRootDir: `${__dirname}`,
-    extraFileExtensions: ['.vue']
+    project: resolve(__dirname, './tsconfig.json'),
+    tsconfigRootDir: __dirname,
+    extraFileExtensions: ['.vue'],
+    ecmaVersion: 2021,
+    sourceType: 'module',
   },
 
   globals: {
     ga: true, // Google Analytics
     cordova: true,
     __statics: true,
-    process: true
+    process: true,
+    Capacitor: true,
+    chrome: true
   },
+
 
   extends: [
     '@quasar-enterprise-monorepo/eslint-config-monorepo',
@@ -28,17 +35,5 @@ module.exports = {
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-vue-i18n',
     '@quasar-enterprise-monorepo/eslint-config-monorepo-jest',
-  ],
-
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        jest: true,
-      },
-    },
   ],
 };

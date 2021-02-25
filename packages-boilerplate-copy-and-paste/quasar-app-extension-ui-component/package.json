@@ -7,7 +7,7 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "vue-cli-service build --target lib --name new_vue_ts_component",
     "lint": "vue-cli-service lint",
-    "lint:fix": "vue-cli-service lint --fix",
+    "lint:fix": "npm run lint:fix:src && npm run lint:fix:test",
     "lint:fix:src": "vue-cli-service lint --fix component/ && vue-cli-service lint --fix src/",
     "lint:fix:test": "vue-cli-service lint --fix tests/",
     "precommit": "lint-staged",
@@ -23,11 +23,11 @@
     "update:check": "ncu",
     "update:update": "ncu -u"
   },
+  "main": "src/index.ts",
   "files": [
     "src",
     "dist"
   ],
-  "main": "src/index.ts",
   "dependencies": {
     "@vue/composition-api": "^0.6.7",
     "@quasar/extras": "^1.9.17",
@@ -61,7 +61,7 @@
     "tsconfig-paths": "^3.9.0",
     "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "~4.1.5",
-    "vue-cli-plugin-quasar": "^3.0.1",
+    "vue-cli-plugin-quasar": "~3.0.1",
     "vue-cli-plugin-styleguidist": "^4.35.0",
     "vue-template-compiler": "^2.6.12",
     "wallaby-vue-compiler": "^1.0.6"

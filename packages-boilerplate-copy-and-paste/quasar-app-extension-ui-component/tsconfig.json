@@ -24,10 +24,13 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    "component",
+    "tests"
   ],
   "exclude": [
     "node_modules",
-    "_templates"
+    "_templates",
+    "dist"
   ]
 }

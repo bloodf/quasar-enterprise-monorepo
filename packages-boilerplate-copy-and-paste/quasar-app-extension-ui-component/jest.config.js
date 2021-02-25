@@ -28,6 +28,9 @@ module.exports = {
   collectCoverageFrom: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.{vue,js,jsx,ts,tsx}`,
     `!<rootDir>/${moduleName}/${packageName}/src/{App,main,InstallPlugin,quasar,index}.{vue,js,jsx,ts,tsx}`,
+    `<rootDir>/${moduleName}/${packageName}/component/**/*.{vue,js,jsx,ts,tsx}`,
+    `!<rootDir>/${moduleName}/${packageName}/component/{App,main,InstallPlugin,quasar,index}.{vue,js,jsx,ts,tsx}`,
+    `!<rootDir>/${moduleName}/${packageName}/component/boot/**/*.{vue,js,jsx,ts,tsx}`,
   ],
   testMatch: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.jest.(spec|test).+(ts|js)?(x)`,
@@ -58,6 +61,7 @@ module.exports = {
     '^~/(.*)$': `<rootDir>/${moduleName}/${packageName}/$1`,
     '^@/(.*)$': `<rootDir>/${moduleName}/${packageName}/$1`,
     '^jest/utils/(.*)$': `<rootDir>/${moduleName}/${packageName}/tests/utils/$1`,
+    '^component/(.*)$': `<rootDir>/${moduleName}/${packageName}/component/$1`,
     ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: `<rootDir>/${moduleName}/${packageName}/` }),
   },
 
