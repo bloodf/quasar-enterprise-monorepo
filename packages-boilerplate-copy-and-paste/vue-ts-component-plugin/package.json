@@ -59,7 +59,7 @@
     "stylus-loader": "^3.0.2",
     "tsconfig-paths": "^3.9.0",
     "tsconfig-paths-webpack-plugin": "^3.3.0",
-    "typescript": "~4.1.5",
+    "typescript": "~4.2.2",
     "vue-cli-plugin-styleguidist": "^4.35.0",
     "vue-template-compiler": "^2.6.12",
     "wallaby-vue-compiler": "^1.0.6"
