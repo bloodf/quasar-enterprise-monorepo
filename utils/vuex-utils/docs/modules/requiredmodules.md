@@ -27,15 +27,15 @@ Renames and exports: [\_\_type](index.md#__type)
 #### Type parameters:
 
 Name |
------- |
+:------ |
 `S` |
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `requireModule` | RequireContext |
 
 **Returns:** *ModuleTree*<S\>
 
-Defined in: [requiredModules.ts:15](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vuex-utils/src/requiredModules.ts#L15)
+Defined in: [requiredModules.ts:15](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vuex-utils/src/requiredModules.ts#L15)

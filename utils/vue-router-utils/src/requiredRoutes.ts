@@ -10,7 +10,7 @@ interface RequireContext {
   id: string;
 }
 
-export function requiredRoutes<S>(requireRoutes: RequireContext): RouteConfig[] {
+export function requiredRoutes(requireRoutes: RequireContext): RouteConfig[] {
   const importedRoutes: RouteConfig[] = [];
 
   requireRoutes.keys().forEach((fileName) => {

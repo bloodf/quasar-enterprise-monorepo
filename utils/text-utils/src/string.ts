@@ -1,4 +1,4 @@
-const normalizeWhiteSpaces = (
+export const normalizeWhiteSpaces = (
   value: string,
 ): string => value.trim().replace(/\s+/g, ' ');
 
@@ -38,14 +38,16 @@ string => s.replace(/\W+/g, ' ')
 export const toUnderscore = (s: string):
 string => fixStrings(s.split(/(?=[A-Z])/).join('_').toLocaleLowerCase());
 
-export const cleanGraphQLError = (e: string | Error | undefined): string => {
+export const cleanGraphQLError = (e: string | Error | undefined | unknown): string => {
   const graphQLErrorString = 'GraphQL error: ';
+
   const cleanMessage = (str: string) => (str.includes(graphQLErrorString) ? str.replace(graphQLErrorString, '') : str);
 
   if (e instanceof Error) {
     return cleanMessage(e.message);
   }
-  return e ? cleanMessage(e) : (e || '');
+
+  return (e ? cleanMessage(e as string) : (e || '')) as string;
 };
 
 export const toCapitalize = (s: string, lower = false) => (lower ? s.toLowerCase() : s).replace(/(?:^|\s|['([{])+\S/g,

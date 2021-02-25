@@ -1,7 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "include": [
-    "src"
+    "src",
+    "test"
   ],
   "compilerOptions": {
     "baseUrl": ".",
@@ -11,9 +12,5 @@
       ]
     }
   },
-  "exclude": [
-    "_templates",
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["_templates", "dist", "node_modules"]
 }

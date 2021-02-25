@@ -17,9 +17,9 @@
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `s` | *string* |
 
 **Returns:** *string*
 
-Defined in: [numeric.ts:1](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/text-utils/src/numeric.ts#L1)
+Defined in: [numeric.ts:1](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/text-utils/src/numeric.ts#L1)

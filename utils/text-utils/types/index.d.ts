@@ -1,4 +1,10 @@
 declare const _default: {
+    phoneToIntlMX: (phone: string) => string;
+    formatToPhoneBr: (value: string) => string;
+    clearPhoneBR: (sN: string | number, formatted?: boolean) => string;
+    formatToCEP: (value: string) => string;
+    phoneToIntlBR: (phone: string) => string;
+    normalizeWhiteSpaces: (value: string) => string;
     getAllWords: (input: string) => string;
     normalizeString: (s: string) => string;
     fixStrings: (s: string) => string;
@@ -6,7 +12,7 @@ declare const _default: {
     toCamel: (s: string) => string;
     toSnakeCase: (s: string) => string;
     toUnderscore: (s: string) => string;
-    cleanGraphQLError: (e: string | Error | undefined) => string;
+    cleanGraphQLError: (e: unknown) => string;
     toCapitalize: (s: string, lower?: boolean) => string;
     formatLocale: (locale: string) => string;
     reticulatingSplines: (s: string[]) => string;

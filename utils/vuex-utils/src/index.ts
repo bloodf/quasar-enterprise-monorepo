@@ -1,4 +1,4 @@
-import { requiredModules as rM } from 'src/requiredModules';
+import { requiredModules as rM } from './requiredModules';
 
 export const requiredModules = rM;
 

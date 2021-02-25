@@ -29,3 +29,4 @@ wallaby.js
 tsdx.config.js
 test/.eslintrc.js
 test/tsconfig.json
+test/jest/jest.setup.js

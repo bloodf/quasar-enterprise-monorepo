@@ -6,6 +6,8 @@
 
 ### Modules
 
+- [brazil](modules/brazil.md)
 - [index](modules/index.md)
+- [mexico](modules/mexico.md)
 - [numeric](modules/numeric.md)
 - [string](modules/string.md)

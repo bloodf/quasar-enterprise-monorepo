@@ -20,7 +20,7 @@ module.exports = {
   preset: './jest.config.base.js',
   rootDir: '../..',
   coverageDirectory: `<rootDir>/${moduleName}/${packageName}/coverage`,
-  setupFilesAfterEnv: [`<rootDir>/${moduleName}/${packageName}/test/jest.setup.js`],
+  setupFilesAfterEnv: [`<rootDir>/${moduleName}/${packageName}/test/jest/jest.setup.js`],
   // noStackTrace: true,
   // bail: true,
   // cache: false,
@@ -32,9 +32,14 @@ module.exports = {
     '^src/(.*)$': `<rootDir>/${moduleName}/${packageName}/src/$1`,
     ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: `<rootDir>/${moduleName}/${packageName}` }),
   },
+
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': require.resolve('jest-transform-stub'),
+    '\\.(css|less|scss|sass|styl)$': require.resolve('identity-obj-proxy'),
+    '^.+\\.(js|jsx)?$': require.resolve('babel-jest'),
+    '^.+\\.(ts|tsx)$': require.resolve('ts-jest'),
   },
+
   collectCoverageFrom: [
     `<rootDir>/${moduleName}/${packageName}/src/**/*.[jt]s?(x)`,
   ],
@@ -66,7 +71,7 @@ module.exports = {
 
   globals: {
     'ts-jest': {
-      tsconfig: `<rootDir>/${moduleName}/${packageName}/test/tsconfig.json`,
+      tsconfig: `<rootDir>/${moduleName}/${packageName}/tsconfig.json`,
       diagnostics: false,
     },
   },

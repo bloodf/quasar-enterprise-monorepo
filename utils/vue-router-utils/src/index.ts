@@ -1,4 +1,4 @@
-import { requiredRoutes as rQ } from 'src/requiredRoutes';
+import { requiredRoutes as rQ } from './requiredRoutes';
 
 export const requiredRoutes = rQ;
 

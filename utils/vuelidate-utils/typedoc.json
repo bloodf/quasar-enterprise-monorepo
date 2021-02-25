@@ -2,5 +2,6 @@
   "entryPoints": ["./src"],
   "out": "docs",
   "excludeExternals": true,
-  "exclude": ["./test"]
+  "exclude": ["./test"],
+  "tsconfig": "tsconfig.doc.json"
 }

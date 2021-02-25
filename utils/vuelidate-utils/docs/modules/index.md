@@ -16,27 +16,27 @@
 
 ### default
 
-• **default**: { `lazyValidate`: (`validator`: ValidatorBase, `delay`: *number*) => (`value`: *any*) => *boolean*  }
+• **default**: *object*
 
 #### Type declaration:
 
 Name | Type |
------- | ------ |
-`lazyValidate` | (`validator`: ValidatorBase, `delay`: *number*) => (`value`: *any*) => *boolean* |
+:------ | :------ |
+`lazyValidate` | (`validator`: ValidatorBase, `delay`: *number*) => (`value`: *any*) => *any* |
 
 ## Functions
 
 ### lazyValidate
 
-▸ `Const`**lazyValidate**(`validator`: ValidatorBase, `delay`: *number*): *function*
+▸ `Const`**lazyValidate**(`validator`: ValidatorBase, `delay`: *number*): (`value`: *any*) => *any*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `validator` | ValidatorBase |
 `delay` | *number* |
 
 **Returns:** *function*
 
-Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vuelidate-utils/src/index.ts#L3)
+Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vuelidate-utils/src/index.ts#L3)

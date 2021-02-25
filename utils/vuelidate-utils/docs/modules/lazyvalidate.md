@@ -22,15 +22,15 @@ Renames and exports: [\_\_type](index.md#__type)
 
 ### lazyValidate
 
-▸ **lazyValidate**(`validator`: ValidatorBase, `delay`: *number*): *function*
+▸ **lazyValidate**(`validator`: ValidatorBase, `delay`: *number*): (`value`: *any*) => *any*
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `validator` | ValidatorBase |
 `delay` | *number* |
 
 **Returns:** *function*
 
-Defined in: [lazyValidate.ts:5](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vuelidate-utils/src/lazyValidate.ts#L5)
+Defined in: [lazyValidate.ts:5](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vuelidate-utils/src/lazyValidate.ts#L5)

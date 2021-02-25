@@ -22,20 +22,14 @@ Renames and exports: [\_\_type](index.md#__type)
 
 ### requiredRoutes
 
-▸ **requiredRoutes**<S\>(`requireRoutes`: RequireContext): RouteConfig[]
-
-#### Type parameters:
-
-Name |
------- |
-`S` |
+▸ **requiredRoutes**(`requireRoutes`: RequireContext): RouteConfig[]
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `requireRoutes` | RequireContext |
 
 **Returns:** RouteConfig[]
 
-Defined in: [requiredRoutes.ts:13](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vue-router-utils/src/requiredRoutes.ts#L13)
+Defined in: [requiredRoutes.ts:13](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vue-router-utils/src/requiredRoutes.ts#L13)

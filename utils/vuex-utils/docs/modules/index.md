@@ -16,12 +16,12 @@
 
 ### default
 
-• **default**: { `requiredModules`: <S\>(`requireModule`: RequireContext) => *ModuleTree*<S\>  }
+• **default**: *object*
 
 #### Type declaration:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `requiredModules` | <S\>(`requireModule`: RequireContext) => *ModuleTree*<S\> |
 
 ## Functions
@@ -33,15 +33,15 @@ Name | Type |
 #### Type parameters:
 
 Name |
------- |
+:------ |
 `S` |
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `requireModule` | RequireContext |
 
 **Returns:** *ModuleTree*<S\>
 
-Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vuex-utils/src/index.ts#L3)
+Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vuex-utils/src/index.ts#L3)

@@ -3,5 +3,5 @@
   "mode": "modules",
   "out": "docs",
   "excludeExternals": true,
-  "exclude": ["./test"]
+  "exclude": ["./test", "types", "_templates", "dist", "node_modules"]
 }

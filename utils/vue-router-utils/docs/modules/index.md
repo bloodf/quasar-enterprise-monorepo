@@ -16,32 +16,26 @@
 
 ### default
 
-• **default**: { `requiredRoutes`: <S\>(`requireRoutes`: RequireContext) => RouteConfig[]  }
+• **default**: *object*
 
 #### Type declaration:
 
 Name | Type |
------- | ------ |
-`requiredRoutes` | <S\>(`requireRoutes`: RequireContext) => RouteConfig[] |
+:------ | :------ |
+`requiredRoutes` | (`requireRoutes`: RequireContext) => RouteConfig[] |
 
 ## Functions
 
 ### requiredRoutes
 
-▸ `Const`**requiredRoutes**<S\>(`requireRoutes`: RequireContext): RouteConfig[]
-
-#### Type parameters:
-
-Name |
------- |
-`S` |
+▸ `Const`**requiredRoutes**(`requireRoutes`: RequireContext): RouteConfig[]
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `requireRoutes` | RequireContext |
 
 **Returns:** RouteConfig[]
 
-Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/master/utils/vue-router-utils/src/index.ts#L3)
+Defined in: [index.ts:3](https://github.com/bloodf/quasar-enterprise-monorepo/blob/f0eae29/utils/vue-router-utils/src/index.ts#L3)

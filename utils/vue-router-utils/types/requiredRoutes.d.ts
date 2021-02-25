@@ -6,5 +6,5 @@ interface RequireContext {
     resolve(id: string): string;
     id: string;
 }
-export declare function requiredRoutes<S>(requireRoutes: RequireContext): RouteConfig[];
+export declare function requiredRoutes(requireRoutes: RequireContext): RouteConfig[];
 export default requiredRoutes;
