@@ -22,5 +22,7 @@ module.exports = {
       ignoreStrings: true,
     }],
     'class-methods-use-this': 'off',
+    'no-console': (process.env.APPLICATION_ENV === 'production' || !!process.env.DEV) ? 'error' : 'off',
+    'no-debugger': (process.env.APPLICATION_ENV === 'production' || !!process.env.DEV) ? 'error' : 'off',
   },
 };
